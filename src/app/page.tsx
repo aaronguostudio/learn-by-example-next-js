@@ -27,7 +27,7 @@ export default function Home() {
             </div>
             <div className="space-y-2">
               <Label size={ ESize.lg }>Day 3 - shadcn/ui Documentation</Label>
-              <div>Start building examples by referencing shadcn/ui documentation</div>
+              <div>Start building examples by referencing shadcn/ui documentation. Deployed the service to Vercel. The deployment with Vercel is very smooth.</div>
             </div>
           </div>
         {/* <Button variant={"outline"}>
