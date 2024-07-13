@@ -16,12 +16,18 @@ export default function BaseLayout({ children }: Readonly<{
         <Link href="/">
           <div className="text-white text-lg font-bold">Learning Next.js</div>
         </Link>
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-1">
 
           {
             appPageMenus.map((item) => {
               return (
-                <MenuItem data={item} key={item.name} exact={item.exact} />
+                <MenuItem
+                  data={item}
+                  key={item.name}
+                  exact={item.exact}
+                  activeClass="text-white"
+                  hoverClass="hover:text-gray-400"
+                />
               )
             })
           }

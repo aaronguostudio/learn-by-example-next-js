@@ -10,7 +10,6 @@ export default function Home() {
           <div className="text-4xl font-bold">Learning Next.js</div>
           <div>
             <div>I build this website while learning the Next.js framework</div>
-            <div>I started with Shadcn/ui and tailwind.</div>
           </div>
         </div>
       </div>

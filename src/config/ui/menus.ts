@@ -33,12 +33,12 @@ export const basicPageMenus: IMenuItem[] = [
   {
     label: "Routing",
     name: "routing",
-    path: "/basic",
+    path: "/basic/routing",
     exact: true,
   },
   {
     label: "Data Fetching",
-    name: "dataFetching",
+    name: "fetching",
     path: "/basic/fetching",
     exact: true,
   },

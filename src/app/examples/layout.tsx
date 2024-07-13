@@ -12,12 +12,14 @@ export default function Layout({
 
   const sidebar = examplesPageMenus.map((item) => {
     return (
-      <MenuItem data={item} key={item.name} exact={item.exact} />
+      <div key={item.name} className="px-2 py-[2px]">
+        <MenuItem data={item} classes="rounded-md text-sm" activeClass="bg-gray-900 text-white" />
+      </div>
     )
   })
 
   return (
-    <SidebarLayout sidebar={sidebar}>
+    <SidebarLayout sidebar={sidebar} sidebarClasses="py-1">
       {children}
     </SidebarLayout>
   )

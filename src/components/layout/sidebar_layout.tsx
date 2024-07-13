@@ -1,15 +1,28 @@
 import { UI } from "@/config/ui"
+import clsx from "clsx"
 
 export default function SidebarLayout({
+  classes = '',
+  sidebarClasses = '',
   children,
-  sidebar
+  sidebar,
 }: Readonly<{
   children: React.ReactNode,
   sidebar: React.ReactNode
+  classes?: string
+  sidebarClasses?: string
 }>) {
   return (
-    <div className="flex h-full">
-      <div className="bg-gray-50 border-r" style={{
+    <div className={clsx([
+      classes,
+      "flex h-full"
+    ])}>
+      <div className={
+        clsx([
+          sidebarClasses,
+          "bg-gray-50 border-r border-gray-200",
+        ])
+      } style={{
         width: `${UI.drawer.width}px`
       }}>
         { sidebar }
