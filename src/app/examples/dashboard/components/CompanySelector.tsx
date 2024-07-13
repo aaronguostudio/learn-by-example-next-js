@@ -1,16 +1,21 @@
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+'use client'
 
-export default function CompanySelector() {
+import SelectBase from '@/components/elements/select/SelectBase'
+import { companyOptions } from '@/config/options/company'
+
+export default function CompanySelector({
+  data,
+  onValueChange
+}: Readonly<{
+  data?: string
+  onValueChange?: (value: string) => void
+}>) {
+
+  const handleOnValueChange = (event: string) => {
+    onValueChange && onValueChange(event)
+  }
+
   return (
-    <Select>
-      <SelectTrigger className="w-[180px]">
-        <SelectValue placeholder="Company A" />
-      </SelectTrigger>
-      <SelectContent>
-        <SelectItem value="companyA">Company A</SelectItem>
-        <SelectItem value="companyB">Company B</SelectItem>
-        <SelectItem value="companyC">Company C</SelectItem>
-      </SelectContent>
-    </Select>
+    <SelectBase options={companyOptions} value={data} onValueChange={handleOnValueChange} />
   )
 }

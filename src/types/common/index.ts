@@ -5,3 +5,9 @@ export enum ESize {
   lg = "lg",
   xl = "xl",
 }
+
+export enum EStatus {
+  pending = "pending",
+  active = "active",
+  complete = "complete",
+}
