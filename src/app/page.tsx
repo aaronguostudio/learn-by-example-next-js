@@ -16,7 +16,7 @@ export default function Home() {
       <div className="flex justify-center">
         <div className="p-4 w-screen max-w-[1000px]">
           <div className="space-y-8">
-            <Label size={ ESize.xl }>Learning Log</Label>
+            <Label size={ ESize.xl2 }>Learning Log</Label>
             <div className="space-y-2">
               <Label size={ ESize.lg }>Day 1 - Next.js Documentation</Label>
               <div>Understanding how Next.js works in general, setup the basic project structure.</div>
@@ -28,6 +28,10 @@ export default function Home() {
             <div className="space-y-2">
               <Label size={ ESize.lg }>Day 3 - shadcn/ui Documentation</Label>
               <div>Start building examples by referencing shadcn/ui documentation. Deployed the service to Vercel. The deployment with Vercel is very smooth.</div>
+            </div>
+            <div className="space-y-2">
+              <Label size={ ESize.lg }>Day 4 - Shift to learn Nest.js for building APIs</Label>
+              <div>I want to have a set of APIs that I can leverage for learning the data fetching part, so I shift to nest.js and built a backend APIs for my learning. Here is the WIP API: <a className="underline" href="https://nest.aaronguo.com" target='_blank'>nest.aaronguo.com</a></div>
             </div>
           </div>
         {/* <Button variant={"outline"}>

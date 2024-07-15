@@ -12,6 +12,8 @@ const getSize = (size: ESize) => {
       return "text-lg font-semibold"
     case ESize.xl:
       return "text-xl font-bold"
+    case ESize.xl2:
+      return "text-2xl font-bold"
   }
 }
 

@@ -4,6 +4,7 @@ export enum ESize {
   md = "md",
   lg = "lg",
   xl = "xl",
+  xl2 = "xl2",
 }
 
 export enum EStatus {
